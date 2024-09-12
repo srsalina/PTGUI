@@ -28,7 +28,10 @@ module.exports = {
         }),
     ],
     resolve: {
-        extensions: ['.js', '.jsx'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+        },
+        extensions: ['.js', '.jsx', '.json'],
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),

@@ -7,12 +7,15 @@ function createWindow() {
         height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
-            nodeIntegration: true,
-            contextIsolation: false,
+            contextIsolation: true,
+            enableRemoteModule: false,
+            nodeIntegration: false,
         }
     });
 
-    mainWindow.loadFile('index.html');
+    // Load the React app
+    mainWindow.loadURL('http://localhost:3000');
+
 }
 
 app.whenReady().then(() => {
