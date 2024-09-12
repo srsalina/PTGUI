@@ -1,10 +1,12 @@
 import React, { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Slider } from "@/components/ui/slider"
+import { Button } from "./components/ui/button.tsx"
+import { Input } from "./components/ui/input.tsx"
+import { Label } from "./components/ui/label.tsx"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select.tsx"
+import { Slider } from "./components/ui/slider.tsx"
 import { ActivityIcon, LockIcon, NetworkIcon, SendIcon, ShieldIcon, WifiIcon } from "lucide-react"
+
+// ... rest of your component code
 
 export default function PenTestGUI() {
     const [scanProgress, setScanProgress] = useState(0)
